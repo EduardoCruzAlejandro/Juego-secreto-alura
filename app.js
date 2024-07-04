@@ -39,14 +39,14 @@ function limpiarCaja() {
 function generarNumeroSecreto() {
     let numeroGenerado =  Math.floor(Math.random()*numeroMaximo)+1;
     //ver resultados en consola
-    console.log(numeroGenerado);
-    console.log(listaNumerosSorteados);
+    //console.log(numeroGenerado);
+    //console.log(listaNumerosSorteados);
     //Si ya sorteamos todos los números
     if (listaNumerosSorteados.length == numeroMaximo) {
         //borramos todos los datos de la array
         listaNumerosSorteados.length = 0;
         //para confirmar que se borraron los datos
-        console.log(listaNumerosSorteados);
+        //console.log(listaNumerosSorteados);
         //hacemos recursividad 
         return generarNumeroSecreto();
     } 
